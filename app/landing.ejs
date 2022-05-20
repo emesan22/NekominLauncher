@@ -58,15 +58,15 @@
             <div class="bot_wrapper">
                 <div id="content">
                     <div id="server_status_wrapper">
-                        <span class="bot_label" id="landingPlayerLabel">SERVER</span>
-                        <span id="player_count">OFFLINE</span>
+                        <span class="bot_label" id="landingPlayerLabel">サーバー</span>
+                        <span id="player_count">オフライン</span>
                     </div>
                     <div class="bot_divider"></div>
                     <div id="mojangStatusWrapper">
-                        <span class="bot_label">MOJANG STATUS</span>
+                        <span class="bot_label">MOJANG ステータス</span>
                         <span id="mojang_status_icon">&#8226;</span>
                         <div id="mojangStatusTooltip">
-                            <div id="mojangStatusTooltipTitle">Services</div>
+                            <div id="mojangStatusTooltipTitle">サーバー</div>
                             <div id="mojangStatusEssentialContainer">
                                 <!-- Essential Mojang services are populated here. -->
                             </div>
@@ -95,7 +95,7 @@
                             </defs>
                             <polyline class="arrowLine" points="0.71 13.26 12.56 1.41 24.16 13.02"/>
                         </svg>
-                        &#10;<span id="newsButtonText">NEWS</span>
+                        &#10;<span id="newsButtonText">ニュース</span>
                     </button>
                 </div>
             </div>
@@ -103,7 +103,7 @@
         <div id="right">
             <div class="bot_wrapper">
                 <div id="launch_content">
-                    <button id="launch_button">PLAY</button>
+                    <button id="launch_button">飛び込む！</button>
                     <div class="bot_divider"></div>
                     <button id="server_selection_button" class="bot_label">&#8226; サーバーが選択されていません</button>
                 </div>
@@ -167,14 +167,14 @@
         </div>
         <div id="newsErrorContainer">
             <div id="newsErrorLoading">
-                <span id="nELoadSpan" class="newsErrorContent">Checking for News..</span>
+                <span id="nELoadSpan" class="newsErrorContent">新しいニュースを確認中...</span>
             </div>
             <div id="newsErrorFailed" style="display: none;">
-                <span id="nEFailedSpan" class="newsErrorContent">Failed to Load News</span>
-                <button id="newsErrorRetry">Try Again</button>
+                <span id="nEFailedSpan" class="newsErrorContent">ニュースの読み込みに失敗しました。</span>
+                <button id="newsErrorRetry">再試行</button>
             </div>
             <div id="newsErrorNone" style="display: none;">
-                <span id="nENoneSpan" class="newsErrorContent">No News</span>
+                <span id="nENoneSpan" class="newsErrorContent">ニュースはありません</span>
             </div>
         </div>
     </div>

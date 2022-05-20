@@ -1,6 +1,6 @@
 {
     "html": {
-        "avatarOverlay": "Edit"
+        "avatarOverlay": "編集"
     },
     "js": {
         "login": {
@@ -8,31 +8,31 @@
                 "invalidValue": "* Invalid Value",
                 "requiredValue": "* Required",
                 "userMigrated": {
-                    "title": "Error During Login:<br>Invalid Credentials",
-                    "desc": "You've attempted to login with a migrated account. Try again using the account email as the username."
+                    "title": "ログイン時のエラー:<br>無効な認証情報",
+                    "desc": "移行したアカウントでログインしようとしました。"
                 },
                 "invalidCredentials": {
-                    "title": "Error During Login:<br>Invalid Credentials",
-                    "desc": "The email or password you've entered is incorrect. Please try again."
+                    "title": "ログイン時のエラー:<br>無効な認証情報",
+                    "desc": "入力されたEメールまたはパスワードが正しくありません。もう一度やり直してください。"
                 },
                 "rateLimit": {
-                    "title": "Error During Login:<br>Too Many Attempts",
-                    "desc": "There have been too many login attempts with this account recently. Please try again later."
+                    "title": "ログイン時のエラー:<br>試行回数が多すぎます。",
+                    "desc": "このアカウントで最近ログインを試行した回数が多すぎます。後で再試行してください。"
                 },
                 "noInternet": {
-                    "title": "Error During Login:<br>No Internet Connection",
-                    "desc": "You must be connected to the internet in order to login. Please connect and try again."
+                    "title": "ログイン時のエラー：<br>インターネットに接続されていません。",
+                    "desc": "ログインするには、インターネットに接続されている必要があります。接続してからもう一度お試しください。"
                 },
                 "authDown": {
-                    "title": "Error During Login:<br>Authentication Server Offline",
-                    "desc": "Mojang's authentication server is currently offline or unreachable. Please wait a bit and try again. You can check the status of the server on <a href=\"https://help.mojang.com/\">Mojang's help portal</a>."
+                    "title": "ログイン時のエラー:<br>認証サーバーがオフラインになっています。",
+                    "desc": "Mojangの認証サーバーは現在オフラインまたは到達不能です。少し待って再度お試しください。サーバーの状態は、<a href=\"https://help.mojang.com/\">Mojangのヘルプポータル</a>で確認できます。"
                 },
                 "notPaid": {
-                    "title": "Error During Login:<br>Game Not Purchased",
-                    "desc": "The account you are trying to login with has not purchased a copy of Minecraft.<br>You may purchase a copy on <a href=\"https://minecraft.net/\">Minecraft.net</a>"
+                    "title": "ログイン時のエラー：<br>ゲームは購入されていません。",
+                    "desc": "ログインしようとしているアカウントは、Minecraft javaEditionを購入していません。<br><a href=\"https://minecraft.net/\">Minecraft.net</a>で購入することができます。"
                 },
                 "unknown": {
-                    "title": "Error During Login:<br>Unknown Error"
+                    "title": "ログイン時のエラー：<br>不明なエラー"
                 }
             },
             "login": "LOGIN",

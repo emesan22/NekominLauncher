@@ -27,11 +27,17 @@ window.eval = global.eval = function () {
 }
 
 // Display warning when devtools window is opened.
+for (let i = 0; i <= 4;i++){
 remote.getCurrentWebContents().on('devtools-opened', () => {
-    console.log('%cThe console is dark and full of terrors.', 'color: white; -webkit-text-stroke: 4px #a02d2a; font-size: 60px; font-weight: bold')
-    console.log('%cIf you\'ve been told to paste something here, you\'re being scammed.', 'font-size: 16px')
-    console.log('%cUnless you know exactly what you\'re doing, close this window.', 'font-size: 16px')
-})
+    console.log('%c コンソールが危険を脅かすことがあります...', 'color: white; -webkit-text-stroke: 4px #08f7fe; font-size: 60px; font-weight: bold')
+    console.log('%c もしもここに貼り付けろと言われたら詐欺の可能性があります。すぐにコンソールを閉じたほうがいいです。', 'font-size: 16px')
+    console.log('%c もしも貼り付けたらあなたの大事なデータやパスワードなどが盗まれるもしくは削除されることがありますので、自分自身のためにコンソールを閉じたほうが良いです。', 'font-size: 16px')
+    console.log('%c もしも今やっていることが完全に理解している場合は一緒に作業をしてみませんか？ https://github.com/emesan22/NekominLauncher', 'font-size: 16px')
+    if (i == 4){
+        console.log('%c 大事なことなので5回言いました', 'font-size: 16px')
+    }
+})}
+
 
 // Disable zoom, needed for darwin.
 webFrame.setZoomLevel(0)
