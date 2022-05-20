@@ -1,28 +1,28 @@
 <p align="center"><img src="./app/assets/images/SealCircle.png" width="150px" height="150px" alt="aventium softworks"></p>
 
-<h1 align="center">Helios Launcher</h1>
+<h1 align="center">Nekomin Launcher</h1>
 
-<em><h5 align="center">(formerly Electron Launcher)</h5></em>
+<em><h5 align="center">(Helios Launcherから)</h5></em>
 
-[<p align="center"><img src="https://img.shields.io/github/workflow/status/dscalzi/HeliosLauncher/Build.svg?style=for-the-badge" alt="gh actions">](https://github.com/dscalzi/HeliosLauncher/actions) [<img src="https://img.shields.io/github/downloads/dscalzi/HeliosLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/dscalzi/HeliosLauncher/releases) <img src="https://forthebadge.com/images/badges/winter-is-coming.svg"  height="28px" alt="winter-is-coming"></p>
+[<p align="center"><img src="https://img.shields.io/github/workflow/status/dscalzi/HeliosLauncher/Build.svg?style=for-the-badge" alt="gh actions">](https://github.com/emesan22/NekominLauncher/actions) [<img src="https://img.shields.io/github/downloads/dscalzi/HeliosLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/emesan22/NekominLauncher/releases) <img src="https://forthebadge.com/images/badges/winter-is-coming.svg"  height="28px" alt="winter-is-coming"></p>
 
-<p align="center">Join modded servers without worrying about installing Java, Forge, or other mods. We'll handle that for you.</p>
+<p align="center">modのことがわからない人からjavaでmodを作れることができる人でも簡単にサーバーに入れるランチャー</p>
 
 ![Screenshot 1](https://i.imgur.com/6o7SmH6.png)
 ![Screenshot 2](https://i.imgur.com/x3B34n1.png)
 
-## Features
+## 特徴
 
-* 🔒 Full account management.
-  * Add multiple accounts and easily switch between them.
-  * Microsoft (OAuth 2.0) + Mojang (Yggdrasil) authentication fully supported.
-  * Credentials are never stored and transmitted directly to Mojang.
-* 📂 Efficient asset management.
-  * Receive client updates as soon as we release them.
-  * Files are validated before launch. Corrupt or incorrect files will be redownloaded.
-* ☕ **Automatic Java validation.**
-  * If you have an incompatible version of Java installed, we'll install the right one *for you*.
-  * You do not need to have Java installed to run the launcher.
+* 🔒 Microsoftアカウントでのログイン.
+  * 簡易に複数のアカウントを追加することができます。
+  * Microsoft (OAuth 2.0) でのログインが完全にサポートできます。
+  * クレデンシャルが保存されてMojangに直接送信されることはありません。 
+* 📂 効率的なファイル管理
+  * クライアントのアップデートが公開され次第、受け取ることができます。
+  * ファイルは、起動前に検証されます。破損したファイルや不正なファイルは再ダウンロードされます。
+* ☕ **Java の自動検証**
+  * 互換性のないJAVAを持っている場合、自動的に**あなた**に適切なJAVAがインストールします。
+  * ランチャーの実行には、Javaがインストールされている必要はありません。
 * 📰 News feed natively built into the launcher.
 * ⚙️ Intuitive settings management, including a Java control panel.
 * Supports all of our servers.
