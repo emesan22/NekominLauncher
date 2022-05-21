@@ -1,13 +1,13 @@
 {
   "name": "nekominlauncher",
-  "version": "1.9.0",
+  "version": "1.0.0",
   "productName": "Nekomin Launcher",
   "description": "Modded Minecraft Launcher",
-  "author": "Daniel Scalzi (https://github.com/dscalzi/)",
+  "author": "emeteam (https://github.com/emeteam/)",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/emesan22/NekominLauncher",
+  "homepage": "https://github.com/emeteam/NekominLauncher",
   "bugs": {
-    "url": "https://github.com/emesan22/NekominLauncher/issues"
+    "url": "https://github.com/emeteam/NekominLauncher/issues"
   },
   "private": true,
   "main": "index.js",
@@ -48,6 +48,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emesan22/NekominLauncher.git"
+    "url": "git+https://github.com/emeteam/NekominLauncher.git"
   }
 }
