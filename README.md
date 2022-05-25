@@ -22,7 +22,7 @@
   * ファイルは、起動前に検証されます。破損したファイルや不正なファイルは再ダウンロードされます。
 * ☕ **Java の自動検証**
   * 互換性のないJAVAを持っている場合、自動的に**あなた**に適切なJAVAがインストールします。
-  * You do not need to have Java installed to run the launcher.
+  * ランチャーの実行にJavaのインストールは必要ありません。
 * 📰 News feed natively built into the launcher.
 * ⚙️ Intuitive settings management, including a Java control panel.
 * Supports all of our servers.
