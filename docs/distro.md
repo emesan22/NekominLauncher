@@ -154,7 +154,7 @@ An array of module objects.
 A module is a generic representation of a file required to run the minecraft client.
 
 #### Example
-```JSON
+```json
 {
     "id": "com.example:artifact:1.0.0@jar.pack.xz",
     "name": "Artifact 1.0.0",

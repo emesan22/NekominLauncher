@@ -1,8 +1,8 @@
-appId: 'helioslauncher'
-productName: 'Helios Launcher'
+appId: 'ml.emetea.nekokmin-launcher'
+productName: 'Nekomin Launcher'
 artifactName: '${productName}-setup-${version}.${ext}'
 
-copyright: 'Copyright © 2018-2022 Daniel Scalzi'
+copyright: 'Copyright © 2018-2022 Daniel Scalzi & © 2022 emesan'
 
 asar: true
 compression: 'maximum'
