@@ -124,7 +124,7 @@ document.getElementById('avatarOverlay').onclick = (e) => {
 
 // Bind selected account
 function updateSelectedAccount(authUser){
-    let username = 'No Account Selected'
+    let username = 'アカウントが選択されていません'
     if(authUser != null){
         if(authUser.displayName != null){
             username = authUser.displayName
@@ -340,7 +340,7 @@ function asyncSystemScan(mcVersion, launchAfter = true){
                         //$('#overlayDismiss').toggle(false)
                         setOverlayContent(
                             'Java is Required<br>to Launch',
-                            'A valid x64 installation of Java 8 is required to launch.<br><br>Please refer to our <a href="https://github.com/dscalzi/HeliosLauncher/wiki/Java-Management#manually-installing-a-valid-version-of-java">Java Management Guide</a> for instructions on how to manually install Java.',
+                            'A valid x64 installation of Java 8 is required to launch.<br><br>Please refer to our <a href="https://github.com/emeteam/NekominLauncher/wiki/Java-Management#manually-installing-a-valid-version-of-java">Java Management Guide</a> for instructions on how to manually install Java.',
                             'I Understand',
                             'Go Back'
                         )
@@ -386,7 +386,7 @@ function asyncSystemScan(mcVersion, launchAfter = true){
                 // User will have to follow the guide to install Java.
                 setOverlayContent(
                     'Unexpected Issue:<br>Java Download Failed',
-                    'Unfortunately we\'ve encountered an issue while attempting to install Java. You will need to manually install a copy. Please check out our <a href="https://github.com/dscalzi/HeliosLauncher/wiki">Troubleshooting Guide</a> for more details and instructions.',
+                    'Unfortunately we\'ve encountered an issue while attempting to install Java. You will need to manually install a copy. Please check out our <a href="https://github.com/emeteam/NekominLauncher/wiki">Troubleshooting Guide</a> for more details and instructions.',
                     'I Understand'
                 )
                 setOverlayHandler(() => {
@@ -486,12 +486,12 @@ function dlAsync(login = true){
 
     if(login) {
         if(ConfigManager.getSelectedAccount() == null){
-            loggerLanding.error('You must be logged into an account.')
+            loggerLanding.error('アカウントをログインしてください')
             return
         }
     }
 
-    setLaunchDetails('Please wait..')
+    setLaunchDetails('少し待ってください...')
     toggleLaunchArea(true)
     setLaunchPercentage(0, 100)
 
@@ -521,13 +521,13 @@ function dlAsync(login = true){
         loggerAEx.log(data)
     })
     aEx.on('error', (err) => {
-        loggerLaunchSuite.error('Error during launch', err)
-        showLaunchFailure('Error During Launch', err.message || 'See console (CTRL + Shift + i) for more details.')
+        loggerLaunchSuite.error('起動時にエラーが発生しました', err)
+        showLaunchFailure('起動時エラー', err.message || 'コンソールを開き (CTRL + Shift + i)エラー内容をヱメサンに送ってください')
     })
     aEx.on('close', (code, signal) => {
         if(code !== 0){
-            loggerLaunchSuite.error(`AssetExec exited with code ${code}, assuming error.`)
-            showLaunchFailure('Error During Launch', 'See console (CTRL + Shift + i) for more details.')
+            loggerLaunchSuite.error(`AssetExecはエラーを想定したコード${code}で終了しました。`)
+            showLaunchFailure('起動時エラー', '詳細は、console（CTRL + Shift + i）を参照してください。')
         }
     })
 
@@ -693,7 +693,7 @@ function dlAsync(login = true){
                     data = data.trim()
                     if(data.indexOf('Could not find or load main class net.minecraft.launchwrapper.Launch') > -1){
                         loggerLaunchSuite.error('Game launch failed, LaunchWrapper was not downloaded properly.')
-                        showLaunchFailure('Error During Launch', 'The main file, LaunchWrapper, failed to download properly. As a result, the game cannot launch.<br><br>To fix this issue, temporarily turn off your antivirus software and launch the game again.<br><br>If you have time, please <a href="https://github.com/dscalzi/HeliosLauncher/issues">submit an issue</a> and let us know what antivirus software you use. We\'ll contact them and try to straighten things out.')
+                        showLaunchFailure('Error During Launch', 'The main file, LaunchWrapper, failed to download properly. As a result, the game cannot launch.<br><br>To fix this issue, temporarily turn off your antivirus software and launch the game again.<br><br>If you have time, please <a href="https://github.com/emeteam/NekominLauncher/issues">submit an issue</a> and let us know what antivirus software you use. We\'ll contact them and try to straighten things out.')
                     }
                 }
 
@@ -705,7 +705,7 @@ function dlAsync(login = true){
                     proc.stdout.on('data', tempListener)
                     proc.stderr.on('data', gameErrorListener)
 
-                    setLaunchDetails('Done. Enjoy the server!')
+                    setLaunchDetails('サーバーへGO!')
 
                     // Init Discord Hook
                     const distro = DistroManager.getDistribution()
@@ -713,7 +713,7 @@ function dlAsync(login = true){
                         DiscordWrapper.initRPC(distro.discord, serv.discord)
                         hasRPC = true
                         proc.on('close', (code, signal) => {
-                            loggerLaunchSuite.log('Shutting down Discord Rich Presence..')
+                            loggerLaunchSuite.log('Discord Rich Presenceのシャットダウン...')
                             DiscordWrapper.shutdownRPC()
                             hasRPC = false
                             proc = null
@@ -722,8 +722,8 @@ function dlAsync(login = true){
 
                 } catch(err) {
 
-                    loggerLaunchSuite.error('Error during launch', err)
-                    showLaunchFailure('Error During Launch', 'Please check the console (CTRL + Shift + i) for more details.')
+                    loggerLaunchSuite.error('起動時エラー', err)
+                    showLaunchFailure('起動時エラー', '詳しくは、コンソール（CTRL + Shift + i）をご確認ください。')
 
                 }
             }

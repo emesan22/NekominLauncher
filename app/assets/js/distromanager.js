@@ -537,12 +537,12 @@ exports.pullRemote = function(){
         return exports.pullLocal()
     }
     return new Promise((resolve, reject) => {
-        const distroURL = 'https://nekomin-launcher.emetea.ml/Nekomin-Launcher/nitoro/distro.json'
+        const distroURL = 'http://emesan22.m26.coreserver.jp/NekominLauncher/distribution.json'
         const opts = {
             url: distroURL,
             timeout: 2500
         }
-        const distroDest = path.join(ConfigManager.getLauncherDirectory(), 'distro.json')
+        const distroDest = path.join(ConfigManager.getLauncherDirectory(), 'distribution.json')
         request(opts, (error, resp, body) => {
             if(!error){
                 
