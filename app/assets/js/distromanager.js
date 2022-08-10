@@ -537,7 +537,7 @@ exports.pullRemote = function(){
         return exports.pullLocal()
     }
     return new Promise((resolve, reject) => {
-        const distroURL = 'http://emesan22.m26.coreserver.jp/NekominLauncher/distribution.json'
+        const distroURL = 'http://nl-file.emetea.ml/distribution.json'
         const opts = {
             url: distroURL,
             timeout: 2500

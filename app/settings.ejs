@@ -207,7 +207,7 @@
                 </div>
             </div>
             <div class="settingsFileSelContainer">
-                <div class="settingsFileSelTitle">実行するJAVA</div>
+                <div class="settingsFileSelTitle">実行JAVA</div>
                 <div class="settingsFileSelContent">
                     <div id="settingsJavaExecDetails">Selected: Java 8 Update 172 (x64)</div>
                     <div class="settingsFileSelActions">
@@ -229,7 +229,7 @@
                         <button class="settingsFileSelButton" id="settingsJavaExecSel" dialogTitle="Select Java Executable" dialogDirectory="false">Choose File</button>
                     </div>
                 </div>
-                <div class="settingsFileSelDesc">Java実行ファイルは、ゲーム起動前に検証されます。<strong>Java 8 x64が必要です。</strong><br>JAVA実行ファイルのパスは <strong>bin<%= process.platform === 'win32' ? '\\javaw.exe' : '/java' %></strong>です。</div>
+                <div class="settingsFileSelDesc">Java実行ファイルは、ゲーム起動前に検証されます。<s><strong>Java 8 x64が必要です。</strong><br>JAVA実行ファイルのパスは <strong>bin<%= process.platform === 'win32' ? '\\javaw.exe' : '/java' %></strong>です。</s>1.18 移行はjava17が必要です!<br>JAVA実行ファイルのパスは <strong>bin<%= process.platform === 'win32' ? '\\javaw.exe' : '/java' %></div>
             </div>
             <div id="settingsJVMOptsContainer">
                 <div id="settingsJVMOptsTitle">JVMの追加オプション（上級者向け）</div>
